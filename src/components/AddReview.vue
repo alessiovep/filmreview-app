@@ -76,7 +76,7 @@ const submitReview = async () => {
     };
 
     await reviewStore.addReview(review);
-
+    await reviewStore.fetchReviews(review.filmId);
     showForm.value = false;
     comment.value = '';
   } catch (e) {
