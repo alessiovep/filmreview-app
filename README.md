@@ -22,6 +22,13 @@ npm install
 npm run dev
 ```
 
+### Start API  (json-server)
+
+```sh
+npm run serve:api
+
+```
+
 ### Compile and Minify for Production
 
 ```sh
