@@ -1,0 +1,227 @@
+{
+    "films": [
+        {
+            "id": 1,
+            "title": "Inception",
+            "description": "A skilled thief is given a chance at redemption...",
+            "releaseDate": "2010-07-16",
+            "year": 2010,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
+            "rating": 5,
+            "reviews": 120,
+            "directorId": 1
+        },
+        {
+            "id": 2,
+            "title": "The Godfather",
+            "description": "The aging patriarch of an organized crime dynasty transfers control...",
+            "releaseDate": "1972-03-24",
+            "year": 1972,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
+            "rating": 5,
+            "reviews": 87,
+            "directorId": 2
+        },
+        {
+            "id": 3,
+            "title": "Spirited Away",
+            "description": "A young girl enters a world of spirits, witches and gods...",
+            "releaseDate": "2001-07-20",
+            "year": 2001,
+            "posterUrl": "https://image.tmdb.org/t/p/w500/dL11DBPcRhWWnJcFXl9A07MrqTI.jpg",
+            "rating": 4,
+            "reviews": 103,
+            "directorId": 3
+        },
+        {
+            "id": 4,
+            "title": "Interstellar",
+            "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity’s survival.",
+            "releaseDate": "2014-11-07",
+            "year": 2014,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
+            "rating": 5,
+            "reviews": 150,
+            "directorId": 1
+        },
+        {
+            "id": 5,
+            "title": "The Matrix",
+            "description": "A computer hacker learns the nature of reality and his role in the war against its controllers.",
+            "releaseDate": "1999-03-31",
+            "year": 1999,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
+            "rating": 4,
+            "reviews": 110,
+            "directorId": 4
+        },
+        {
+            "id": 6,
+            "title": "Parasite",
+            "description": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy and poor.",
+            "releaseDate": "2019-05-30",
+            "year": 2019,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29.png",
+            "rating": 5,
+            "reviews": 134,
+            "directorId": 5
+        },
+        {
+            "id": 7,
+            "title": "The Dark Knight",
+            "description": "Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+            "releaseDate": "2008-07-18",
+            "year": 2008,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg",
+            "rating": 5,
+            "reviews": 200,
+            "directorId": 1
+        },
+        {
+            "id": 8,
+            "title": "La La Land",
+            "description": "While navigating their careers in Los Angeles, a pianist and an actress fall in love.",
+            "releaseDate": "2016-12-09",
+            "year": 2016,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29.png",
+            "rating": 4,
+            "reviews": 97,
+            "directorId": 6
+        }
+    ],
+    "directors": [
+        {
+            "id": 1,
+            "name": "Christopher Nolan",
+            "nationality": "British-American"
+        },
+        {
+            "id": 2,
+            "name": "Francis Ford Coppola",
+            "nationality": "American"
+        },
+        {
+            "id": 3,
+            "name": "Hayao Miyazaki",
+            "nationality": "Japanese"
+        },
+        {
+            "id": 4,
+            "name": "Lana Wachowski",
+            "nationality": "American"
+        },
+        {
+            "id": 5,
+            "name": "Bong Joon-ho",
+            "nationality": "South Korean"
+        },
+        {
+            "id": 6,
+            "name": "Damien Chazelle",
+            "nationality": "American"
+        }
+    ],
+    "users": [
+        { "id": 1, "username": "Alice86", "name": "Alice", "email": "alice@gmail.com", "password": "1234" },
+        { "id": 2, "username": "Lucas44", "name": "Lucas", "email": "lucas@gmail.com", "password": "1234" },
+        { "id": 3, "username": "Sofia_Copola", "name": "Sofia", "email": "sofia@gmail.com", "password": "1234" }
+    ],
+    "reviews": [
+        {
+            "id": 1,
+            "filmId": 1,
+            "userId": 1,
+            "rating": 5,
+            "comment": "Mind-blowing movie. The concept, visuals and sound were all amazing.",
+            "created_at": "2024-03-20T14:25:00Z"
+        },
+        {
+            "id": 2,
+            "filmId": 1,
+            "userId": 2,
+            "rating": 4,
+            "comment": "Very clever and intense. Slightly confusing at times.",
+            "created_at": "2024-03-21T09:12:00Z"
+        },
+        {
+            "id": 3,
+            "filmId": 2,
+            "userId": 3,
+            "rating": 5,
+            "comment": "A masterpiece. Marlon Brando was incredible.",
+            "created_at": "2024-03-18T19:45:00Z"
+        },
+        {
+            "id": 4,
+            "filmId": 3,
+            "userId": 2,
+            "rating": 5,
+            "comment": "Visually stunning and emotionally powerful!",
+            "created_at": "2024-03-22T17:10:00Z"
+        },
+        {
+            "id": 5,
+            "filmId": 4,
+            "userId": 3,
+            "rating": 4,
+            "comment": "Interstellar makes your brain melt... in a good way.",
+            "created_at": "2024-03-23T12:40:00Z"
+        },
+        {
+            "id": 6,
+            "filmId": 5,
+            "userId": 1,
+            "rating": 3,
+            "comment": "Cool concept but a bit dated visually.",
+            "created_at": "2024-03-24T14:55:00Z"
+        },
+        {
+            "id": 7,
+            "filmId": 6,
+            "userId": 2,
+            "rating": 5,
+            "comment": "Incredible social commentary. A masterpiece.",
+            "created_at": "2024-03-24T18:00:00Z"
+        },
+        {
+            "id": 8,
+            "filmId": 7,
+            "userId": 3,
+            "rating": 5,
+            "comment": "The Joker was next level. Best Batman ever!",
+            "created_at": "2024-03-25T09:20:00Z"
+        },
+        {
+            "id": 9,
+            "filmId": 8,
+            "userId": 1,
+            "rating": 4,
+            "comment": "Great music and chemistry. A bit too dramatic.",
+            "created_at": "2024-03-25T11:30:00Z"
+        },
+        {
+            "id": 10,
+            "filmId": 3,
+            "userId": 3,
+            "rating": 5,
+            "comment": "Studio Ghibli magic at its finest.",
+            "created_at": "2024-03-26T08:15:00Z"
+        },
+        {
+            "id": 11,
+            "filmId": 2,
+            "userId": 2,
+            "rating": 5,
+            "comment": "The Godfather defines classic cinema. Brilliant.",
+            "created_at": "2024-03-26T12:00:00Z"
+        },
+        {
+            "id": 12,
+            "filmId": 1,
+            "userId": 3,
+            "rating": 4,
+            "comment": "Still thinking about that ending. Mind-bending!",
+            "created_at": "2024-03-26T15:45:00Z"
+        }
+    ]
+}
