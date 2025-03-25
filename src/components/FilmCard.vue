@@ -8,14 +8,6 @@
             {{ film.year }}
         </v-card-subtitle>
         <v-card-subtitle class="text-caption"> {{ film.director?.name }} </v-card-subtitle>
-
-        <v-card-text>
-            <p>
-                <strong>Rating:</strong> {{ getStars(film.rating) }}
-                <br />
-                {{ film.reviews }} reviews
-            </p>
-        </v-card-text>
     </v-card>
 </template>
 

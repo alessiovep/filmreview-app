@@ -6,7 +6,7 @@ export interface Film {
     title: string;
     description: string;
     releaseDate: Date;
-    director_Id: number;
+    directorId: number;
     posterUrl: string;
     year: number;
     rating: number;
