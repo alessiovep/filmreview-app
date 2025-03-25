@@ -65,6 +65,13 @@ const submitReview = async () => {
   }
 
   try {
+    // check user
+    const userRes = await fetch(`http://localhost:3001/users/${userId.value}`);
+    if (!userRes.ok) {
+      error.value = 'User Id not found. Please enter a valid user.';
+      return;
+    }
+
     const now = new Date();
     const review = {
       filmId: filmId,
@@ -83,6 +90,7 @@ const submitReview = async () => {
     error.value = 'Error submitting review.';
   }
 };
+
 </script>
 
 <style scoped>
