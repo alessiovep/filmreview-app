@@ -21,17 +21,19 @@
 
                 <p class="mt-4">{{ film?.description }}</p>
             </v-col>
-          <AddReview />
         </v-row>
+      <AddReview />
+      <h2 class="text-h5 font-weight-bold mt-8 mb-4">Reviews for this film</h2>
+      <ReviewList v-if="film?.id" :filmId="film.id" />
     </v-container>
 </template>
-
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
 import axios from "axios";
 import type { Film } from "../models/film";
 import AddReview from "../components/AddReview.vue";
+import ReviewList from "../components/ReviewList.vue";
 
 const route = useRoute();
 const film = ref<Film | null>(null);

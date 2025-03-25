@@ -422,6 +422,15 @@
       "created_at": "2025-03-25T19:01:20.730Z",
       "updated_at": "2025-03-25T19:01:20.730Z",
       "id": 18
+    },
+    {
+      "filmId": 8,
+      "userId": 1,
+      "rating": 5,
+      "comment": "lalalalal",
+      "created_at": "2025-03-25T19:39:59.313Z",
+      "updated_at": "2025-03-25T19:39:59.313Z",
+      "id": 19
     }
   ]
 }
