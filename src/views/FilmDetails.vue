@@ -21,6 +21,7 @@
 
                 <p class="mt-4">{{ film?.description }}</p>
             </v-col>
+          <AddReview />
         </v-row>
     </v-container>
 </template>
@@ -30,6 +31,7 @@ import { ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
 import axios from "axios";
 import type { Film } from "../models/film";
+import AddReview from "../components/AddReview.vue";
 
 const route = useRoute();
 const film = ref<Film | null>(null);
