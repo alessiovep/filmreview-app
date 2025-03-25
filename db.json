@@ -395,6 +395,33 @@
       "created_at": "2025-03-25T18:43:13.068Z",
       "updated_at": "2025-03-25T18:43:13.068Z",
       "id": 15
+    },
+    {
+      "filmId": 12,
+      "userId": 3,
+      "rating": 5,
+      "comment": "Kids friendly",
+      "created_at": "2025-03-25T18:44:39.878Z",
+      "updated_at": "2025-03-25T18:44:39.878Z",
+      "id": 16
+    },
+    {
+      "filmId": 3,
+      "userId": 1,
+      "rating": 5,
+      "comment": "qqqqqqqqqqqqq",
+      "created_at": "2025-03-25T19:00:42.768Z",
+      "updated_at": "2025-03-25T19:00:42.768Z",
+      "id": 17
+    },
+    {
+      "filmId": 10,
+      "userId": 1,
+      "rating": 5,
+      "comment": "tttttttttt",
+      "created_at": "2025-03-25T19:01:20.730Z",
+      "updated_at": "2025-03-25T19:01:20.730Z",
+      "id": 18
     }
   ]
 }
