@@ -1,23 +1,23 @@
 <script setup lang="ts">
 import FilmCard from "../components/FilmCard.vue";
 import ReviewCard from "../components/ReviewCard.vue";
-import axios from "axios";
-import type { Film } from "../models/film";
-import { onMounted, ref } from "vue";
-import type { Review } from "../models/review";
-import TestRating from "./TestRating.vue";
+import { computed, onMounted, ref } from "vue";
+import { useFilmStore } from "../stores/filmStore";
+import { useReviewStore } from "../stores/reviewStore";
 
-const mainFilms = ref<Film[]>([]);
-const latestReviews = ref<Review[]>([]);
+const filmStore = useFilmStore();
+const reviewStore = useReviewStore();
+
+const films = computed(() => {
+    return filmStore.films.slice(0, 6);
+});
+const reviews = computed(() => {
+    return reviewStore.reviews.slice(0, 6);
+});
 
 onMounted(async () => {
-    const filmRes = await axios.get("http://localhost:3001/films?_sort=reviews&_order=desc&_limit=6&_expand=director");
-    mainFilms.value = filmRes.data;
-
-    const reviewRes = await axios.get(
-        "http://localhost:3001/reviews?_expand=user&_expand=film&_sort=created_at&_order=desc&_limit=6"
-    );
-    latestReviews.value = reviewRes.data;
+    await filmStore.fetchFilms();
+    await reviewStore.fetchReviews();
 });
 </script>
 
@@ -37,7 +37,7 @@ onMounted(async () => {
         <div class="film-grid">
             <v-container>
                 <v-row>
-                    <v-col v-for="film in mainFilms" :key="film.id" cols="12" sm="6" md="2">
+                    <v-col v-for="film in films" :key="film.id" cols="12" sm="6" md="2">
                         <FilmCard :film="film" />
                     </v-col>
                 </v-row>
@@ -52,7 +52,7 @@ onMounted(async () => {
         <div class="film-grid">
             <v-container>
                 <v-row>
-                    <v-col v-for="review in latestReviews" :key="review.id" cols="12" sm="6" md="2">
+                    <v-col v-for="review in reviews" :key="review.id" cols="12" sm="6" md="2">
                         <ReviewCard :review="review" />
                     </v-col>
                 </v-row>

@@ -16,8 +16,4 @@ import type { Film } from "../models/film";
 defineProps<{
     film: Film;
 }>();
-
-function getStars(rating: number): string {
-    return "★".repeat(rating) + "☆".repeat(5 - rating);
-}
 </script>

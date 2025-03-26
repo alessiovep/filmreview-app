@@ -7,7 +7,7 @@ export const useReviewStore = defineStore("reviewStore", {
     }),
     actions: {
         async fetchReviews(filmId?: number) {
-            const baseUrl = "http://localhost:3001/reviews?_expand=user&_expand=film";
+            const baseUrl = "http://localhost:3001/reviews?_sort=created_at&_order=desc&_expand=user&_expand=film";
 
             const url = filmId !== undefined || null ? `${baseUrl}&filmId=${filmId}` : baseUrl;
 
@@ -15,8 +15,8 @@ export const useReviewStore = defineStore("reviewStore", {
             this.reviews = data;
         },
         async addReview(review: any) {
-            const { data } = await axios.post("http://localhost:3001/reviews", review);
-            await this.reviews.push(data);
+            await axios.post("http://localhost:3001/reviews", review);
+            await this.fetchReviews(review?.filmId);
         },
     },
 });

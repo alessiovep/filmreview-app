@@ -3,7 +3,7 @@
         <h1 class="text-h4 font-weight-bold mb-6">All Films</h1>
 
         <v-row>
-            <v-col v-for="film in films" :key="film.id" cols="12" sm="6" md="3">
+            <v-col v-for="film in filmStore.films" :key="film.id" cols="12" sm="6" md="3">
                 <FilmCard :film="film" />
             </v-col>
         </v-row>
@@ -11,14 +11,12 @@
 </template>
 <script setup lang="ts">
 import FilmCard from "../components/FilmCard.vue";
-import axios from "axios";
-import { onMounted, ref } from "vue";
-import type { Film } from "../models/film";
+import { onMounted } from "vue";
+import { useFilmStore } from "../stores/filmStore";
 
-const films = ref<Film[]>([]);
+const filmStore = useFilmStore();
 
 onMounted(async () => {
-    const { data } = await axios.get("http://localhost:3001/films?_expand=director");
-    films.value = data;
+    await filmStore.fetchFilms();
 });
 </script>

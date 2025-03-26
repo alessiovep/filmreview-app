@@ -5,6 +5,7 @@ import FilmsView from "../views/FilmsView.vue";
 import ReviewsView from "../views/ReviewsView.vue";
 import AccountView from "../views/AccountView.vue";
 import FilmDetails from "../views/FilmDetails.vue";
+import Autentication from "../components/Autentication.vue";
 
 const routes = [
     { path: "/", name: "Home", component: HomeView },
@@ -12,6 +13,7 @@ const routes = [
     { path: "/reviews", name: "Reviews", component: ReviewsView },
     { path: "/account", name: "Account", component: AccountView },
     { path: "/films/:id", name: "FilmDetails", component: FilmDetails },
+    { path: "/login", name: "Autentication", component: Autentication },
 ];
 
 const router = createRouter({

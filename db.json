@@ -1,616 +1,754 @@
 {
-  "films": [
-    {
-      "id": 1,
-      "title": "Inception",
-      "description": "Dom Cobb is a skilled thief who steals corporate secrets through the use of dream-sharing technology. Tasked with planting an idea instead of stealing one, he assembles a team to perform inception on a powerful businessman. As they descend into layers of dreams, the line between reality and illusion blurs.",
-      "releaseDate": "2010-07-16",
-      "year": 2010,
-      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
-      "rating": 5,
-      "reviews": 120,
-      "genre": "SciFi",
-      "directorId": 1
-    },
-    {
-      "id": 2,
-      "title": "The Godfather",
-      "description": "The aging patriarch of the Corleone family hands over control of his empire to his reluctant son, Michael. As Michael becomes increasingly involved in the family business, he is drawn into a world of power, betrayal, and violence, transforming into a ruthless leader.",
-      "releaseDate": "1972-03-24",
-      "year": 1972,
-      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
-      "rating": 5,
-      "reviews": 87,
-      "genre": "Drama",
-      "directorId": 2
-    },
-    {
-      "id": 3,
-      "title": "Spirited Away",
-      "description": "A ten-year-old girl named Chihiro stumbles into a mysterious world ruled by spirits and gods. When her parents are transformed into pigs, she must work in a bathhouse for spirits while seeking a way to free them and return to the human world.",
-      "releaseDate": "2001-07-20",
-      "year": 2001,
-      "posterUrl": "https://image.tmdb.org/t/p/w500/dL11DBPcRhWWnJcFXl9A07MrqTI.jpg",
-      "rating": 4,
-      "reviews": 103,
-      "genre": "Fantasy",
-      "directorId": 3
-    },
-    {
-      "id": 4,
-      "title": "Interstellar",
-      "description": "In a future where Earth is becoming uninhabitable, a team of astronauts travels through a wormhole in search of a new home for humanity. Facing time distortion, emotional loss, and unknown planets, they race against time to save civilization.",
-      "releaseDate": "2014-11-07",
-      "year": 2014,
-      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
-      "rating": 5,
-      "reviews": 150,
-      "genre": "SciFi",
-      "directorId": 1
-    },
-    {
-      "id": 5,
-      "title": "The Matrix",
-      "description": "Thomas Anderson, a hacker known as Neo, discovers that reality is a simulation controlled by sentient machines. Guided by Morpheus and Trinity, he must embrace his role as 'The One' and fight to free humanity from the Matrix.",
-      "releaseDate": "1999-03-31",
-      "year": 1999,
-      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
-      "rating": 4,
-      "reviews": 110,
-      "genre": "SciFi",
-      "directorId": 4
-    },
-    {
-      "id": 6,
-      "title": "Parasite",
-      "description": "The Kim family, struggling to survive, gradually infiltrates a wealthy household under false pretenses. As their deception deepens, unexpected events turn their plan upside down in this biting social commentary on class and greed.",
-      "releaseDate": "2019-05-30",
-      "year": 2019,
-      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29.png",
-      "rating": 5,
-      "reviews": 134,
-      "genre": "Drama",
-      "directorId": 5
-    },
-    {
-      "id": 7,
-      "title": "The Dark Knight",
-      "description": "Batman faces his greatest challenge yet when the Joker unleashes chaos in Gotham. As the line between hero and vigilante blurs, Bruce Wayne must confront his deepest fears to protect the city he loves.",
-      "releaseDate": "2008-07-18",
-      "year": 2008,
-      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg",
-      "rating": 5,
-      "reviews": 200,
-      "genre": "Action",
-      "directorId": 1
-    },
-    {
-      "id": 8,
-      "title": "La La Land",
-      "description": "Mia, an aspiring actress, and Sebastian, a jazz musician, fall in love while pursuing their dreams in Los Angeles. As their careers soar, they face difficult choices about ambition, love, and what truly matters.",
-      "releaseDate": "2016-12-09",
-      "year": 2016,
-      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29.png",
-      "rating": 4,
-      "reviews": 97,
-      "genre": "Drama",
-      "directorId": 6
-    },
-    {
-      "id": 9,
-      "title": "Arrival",
-      "description": "When mysterious spacecraft touch down across the globe, expert linguist Louise Banks is recruited to decipher the aliens' language and intentions. As she learns to communicate, she uncovers revelations that challenge human perception of time and memory.",
-      "releaseDate": "2016-11-11",
-      "year": 2016,
-      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/d/df/Arrival_%282016_film%29.jpg",
-      "rating": 4,
-      "reviews": 91,
-      "genre": "SciFi",
-      "directorId": 5
-    },
-    {
-      "id": 10,
-      "title": "Your Name",
-      "description": "Two teenagers mysteriously start swapping bodies across time and distance. As they learn about each other’s lives and struggles, a deeper connection forms, and a shocking discovery binds their fates together.",
-      "releaseDate": "2016-08-26",
-      "year": 2016,
-      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png",
-      "rating": 5,
-      "reviews": 118,
-      "genre": "Fantasy",
-      "directorId": 3
-    },
-    {
-      "id": 11,
-      "title": "The Prestige",
-      "description": "Two rival magicians in 19th-century London engage in a dangerous competition to create the ultimate illusion, pushing the boundaries of science, sacrifice, and obsession.",
-      "releaseDate": "2006-10-20",
-      "year": 2006,
-      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/d/d2/Prestige_poster.jpg",
-      "rating": 5,
-      "reviews": 104,
-      "genre": "Drama",
-      "directorId": 1
-    },
-    {
-      "id": 12,
-      "title": "Inside Out",
-      "description": "Riley, an 11-year-old girl, deals with a difficult move to a new city. Inside her mind, five emotions — Joy, Sadness, Fear, Disgust, and Anger — struggle to guide her through the transition, revealing how emotions shape who we are.",
-      "releaseDate": "2015-06-19",
-      "year": 2015,
-      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/0/0a/Inside_Out_%282015_film%29_poster.jpg",
-      "rating": 4,
-      "reviews": 87,
-      "genre": "Comedy",
-      "directorId": 4
-    },
-    {
-      "id": 13,
-      "title": "Tenet",
-      "description": "A secret agent embarks on a time-bending mission to prevent the onset of World War III. As he navigates a world of inversion and reversed entropy, he uncovers truths that redefine the nature of time and reality.",
-      "releaseDate": "2020-08-26",
-      "year": 2020,
-      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/1/14/Tenet_movie_poster.jpg",
-      "rating": 4,
-      "reviews": 99,
-      "genre": "Action",
-      "directorId": 1
-    },
-    {
-      "id": 14,
-      "title": "Whiplash",
-      "description": "A talented drummer enrolls at a prestigious music conservatory and finds himself under the mentorship of an abusive instructor whose methods push him to the edge of his ability and sanity.",
-      "releaseDate": "2014-10-10",
-      "year": 2014,
-      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/0/01/Whiplash_poster.jpg",
-      "rating": 5,
-      "reviews": 134,
-      "genre": "Drama",
-      "directorId": 6
-    },
-    {
-      "id": 15,
-      "title": "Edge of Tomorrow",
-      "description": "Major William Cage is caught in a time loop, reliving a deadly battle against alien invaders. With the help of warrior Rita Vrataski, he must improve his skills and change the outcome of the war.",
-      "releaseDate": "2014-06-06",
-      "year": 2014,
-      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/f/f9/Edge_of_Tomorrow_Poster.jpg",
-      "rating": 4,
-      "reviews": 85,
-      "genre": "SciFi",
-      "directorId": 5
-    },
-    {
-      "id": 16,
-      "title": "Amélie",
-      "description": "Amélie is a shy waitress in Paris who sets out to improve the lives of those around her through small, whimsical acts of kindness. Along the way, she discovers the courage to pursue her own happiness.",
-      "releaseDate": "2001-04-25",
-      "year": 2001,
-      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/5/53/Amelie_poster.jpg",
-      "rating": 4,
-      "reviews": 101,
-      "genre": "Comedy",
-      "directorId": 2
-    },
-    {
-      "id": 17,
-      "title": "The Grand Budapest Hotel",
-      "description": "The story of a legendary concierge and his loyal protégé unfolds across decades in a whimsical Eastern European hotel. A stolen painting, a murder mystery, and quirky characters blend in this stylish adventure.",
-      "releaseDate": "2014-03-28",
-      "year": 2014,
-      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/a/a6/The_Grand_Budapest_Hotel_Poster.jpg",
-      "rating": 4,
-      "reviews": 93,
-      "genre": "Comedy",
-      "directorId": 4
-    },
-    {
-      "id": 18,
-      "title": "Ex Machina",
-      "description": "A young programmer is selected to participate in a groundbreaking experiment in synthetic intelligence by evaluating the human qualities of a highly advanced humanoid A.I.",
-      "releaseDate": "2015-04-24",
-      "year": 2015,
-      "posterUrl": "https://upload.wikimedia.org/wikipedia/en/b/ba/Ex_Machina_poster.png",
-      "rating": 4,
-      "reviews": 88,
-      "genre": "SciFi",
-      "directorId": 5
-    }
-  ],
-  "directors": [
-    {
-      "id": 1,
-      "name": "Christopher Nolan",
-      "nationality": "British-American"
-    },
-    {
-      "id": 2,
-      "name": "Francis Ford Coppola",
-      "nationality": "American"
-    },
-    {
-      "id": 3,
-      "name": "Hayao Miyazaki",
-      "nationality": "Japanese"
-    },
-    {
-      "id": 4,
-      "name": "Lana Wachowski",
-      "nationality": "American"
-    },
-    {
-      "id": 5,
-      "name": "Bong Joon-ho",
-      "nationality": "South Korean"
-    },
-    {
-      "id": 6,
-      "name": "Damien Chazelle",
-      "nationality": "American"
-    }
-  ],
-  "users": [
-    {
-      "id": 1,
-      "username": "Alice86",
-      "name": "Alice",
-      "email": "alice@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": 2,
-      "username": "Lucas44",
-      "name": "Lucas",
-      "email": "lucas@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": 3,
-      "username": "Sofia_Copola",
-      "name": "Sofia",
-      "email": "sofia@gmail.com",
-      "password": "1234"
-    }
-  ],
-  "reviews": [
-    {
-      "id": 1,
-      "filmId": 1,
-      "userId": 1,
-      "rating": 5,
-      "comment": "Mind-blowing movie. The concept, visuals and sound were all amazing.",
-      "created_at": "2024-03-20T14:25:00Z"
-    },
-    {
-      "id": 2,
-      "filmId": 1,
-      "userId": 2,
-      "rating": 4,
-      "comment": "Very clever and intense. Slightly confusing at times.",
-      "created_at": "2024-03-21T09:12:00Z"
-    },
-    {
-      "id": 3,
-      "filmId": 2,
-      "userId": 3,
-      "rating": 5,
-      "comment": "A masterpiece. Marlon Brando was incredible.",
-      "created_at": "2024-03-18T19:45:00Z"
-    },
-    {
-      "id": 4,
-      "filmId": 3,
-      "userId": 2,
-      "rating": 5,
-      "comment": "Visually stunning and emotionally powerful!",
-      "created_at": "2024-03-22T17:10:00Z"
-    },
-    {
-      "id": 5,
-      "filmId": 4,
-      "userId": 3,
-      "rating": 4,
-      "comment": "Interstellar makes your brain melt... in a good way.",
-      "created_at": "2024-03-23T12:40:00Z"
-    },
-    {
-      "id": 6,
-      "filmId": 5,
-      "userId": 1,
-      "rating": 3,
-      "comment": "Cool concept but a bit dated visually.",
-      "created_at": "2024-03-24T14:55:00Z"
-    },
-    {
-      "id": 7,
-      "filmId": 6,
-      "userId": 2,
-      "rating": 5,
-      "comment": "Incredible social commentary. A masterpiece.",
-      "created_at": "2024-03-24T18:00:00Z"
-    },
-    {
-      "id": 8,
-      "filmId": 7,
-      "userId": 3,
-      "rating": 5,
-      "comment": "The Joker was next level. Best Batman ever!",
-      "created_at": "2024-03-25T09:20:00Z"
-    },
-    {
-      "id": 9,
-      "filmId": 8,
-      "userId": 1,
-      "rating": 4,
-      "comment": "Great music and chemistry. A bit too dramatic.",
-      "created_at": "2024-03-25T11:30:00Z"
-    },
-    {
-      "id": 10,
-      "filmId": 3,
-      "userId": 3,
-      "rating": 5,
-      "comment": "Studio Ghibli magic at its finest.",
-      "created_at": "2024-03-26T08:15:00Z"
-    },
-    {
-      "id": 11,
-      "filmId": 2,
-      "userId": 2,
-      "rating": 5,
-      "comment": "The Godfather defines classic cinema. Brilliant.",
-      "created_at": "2024-03-26T12:00:00Z"
-    },
-    {
-      "id": 12,
-      "filmId": 1,
-      "userId": 3,
-      "rating": 4,
-      "comment": "Still thinking about that ending. Mind-bending!",
-      "created_at": "2024-03-26T15:45:00Z"
-    },
-    {
-      "filmId": 3,
-      "userId": 1,
-      "rating": 5,
-      "comment": "For Reeeeeaaaaaaaaaal!",
-      "created_at": "2025-03-25T18:41:14.835Z",
-      "updated_at": "2025-03-25T18:41:14.835Z",
-      "id": 13
-    },
-    {
-      "filmId": 2,
-      "userId": 1,
-      "rating": 5,
-      "comment": "Classic and never gets old!",
-      "created_at": "2025-03-25T18:41:47.780Z",
-      "updated_at": "2025-03-25T18:41:47.780Z",
-      "id": 14
-    },
-    {
-      "filmId": 2,
-      "userId": 1,
-      "rating": 1,
-      "comment": "gtyui",
-      "created_at": "2025-03-25T18:43:13.068Z",
-      "updated_at": "2025-03-25T18:43:13.068Z",
-      "id": 15
-    },
-    {
-      "filmId": 12,
-      "userId": 3,
-      "rating": 5,
-      "comment": "Kids friendly",
-      "created_at": "2025-03-25T18:44:39.878Z",
-      "updated_at": "2025-03-25T18:44:39.878Z",
-      "id": 16
-    },
-    {
-      "filmId": 3,
-      "userId": 1,
-      "rating": 5,
-      "comment": "qqqqqqqqqqqqq",
-      "created_at": "2025-03-25T19:00:42.768Z",
-      "updated_at": "2025-03-25T19:00:42.768Z",
-      "id": 17
-    },
-    {
-      "filmId": 10,
-      "userId": 1,
-      "rating": 5,
-      "comment": "tttttttttt",
-      "created_at": "2025-03-25T19:01:20.730Z",
-      "updated_at": "2025-03-25T19:01:20.730Z",
-      "id": 18
-    },
-    {
-      "filmId": 8,
-      "userId": 1,
-      "rating": 5,
-      "comment": "lalalalal",
-      "created_at": "2025-03-25T19:39:59.313Z",
-      "updated_at": "2025-03-25T19:39:59.313Z",
-      "id": 19
-    },
-    {
-      "filmId": 8,
-      "userId": 1,
-      "rating": 5,
-      "comment": "Musical and lovely!",
-      "created_at": "2025-03-25T20:11:59.098Z",
-      "updated_at": "2025-03-25T20:11:59.098Z",
-      "id": 20
-    },
-    {
-      "filmId": 1,
-      "userId": 1,
-      "rating": 5,
-      "comment": "Really good!",
-      "created_at": "2025-03-25T20:12:42.355Z",
-      "updated_at": "2025-03-25T20:12:42.355Z",
-      "id": 21
-    },
-    {
-      "filmId": 4,
-      "userId": 1,
-      "rating": 5,
-      "comment": "Scary!",
-      "created_at": "2025-03-25T20:14:25.634Z",
-      "updated_at": "2025-03-25T20:14:25.634Z",
-      "id": 22
-    },
-    {
-      "filmId": 6,
-      "userId": 1,
-      "rating": 5,
-      "comment": "Korea's best",
-      "created_at": "2025-03-25T20:16:02.818Z",
-      "updated_at": "2025-03-25T20:16:02.818Z",
-      "id": 23
-    },
-    {
-      "filmId": 15,
-      "userId": 1,
-      "rating": 3,
-      "comment": "Action packed",
-      "created_at": "2025-03-25T20:18:20.770Z",
-      "updated_at": "2025-03-25T20:18:20.770Z",
-      "id": 24
-    },
-    {
-      "filmId": 3,
-      "userId": 1,
-      "rating": 5,
-      "comment": "Masterpiece",
-      "created_at": "2025-03-25T20:18:45.194Z",
-      "updated_at": "2025-03-25T20:18:45.194Z",
-      "id": 25
-    },
-    {
-      "filmId": 3,
-      "userId": 1,
-      "rating": 5,
-      "comment": "Really nice",
-      "created_at": "2025-03-25T20:19:04.354Z",
-      "updated_at": "2025-03-25T20:19:04.354Z",
-      "id": 26
-    },
-    {
-      "filmId": 7,
-      "userId": 1,
-      "rating": 5,
-      "comment": "\nBatman is sexy",
-      "created_at": "2025-03-25T20:31:08.987Z",
-      "updated_at": "2025-03-25T20:31:08.987Z",
-      "id": 27
-    },
-    {
-      "filmId": 10,
-      "userId": 15,
-      "rating": 5,
-      "comment": "fffffffff",
-      "created_at": "2025-03-25T20:33:56.243Z",
-      "updated_at": "2025-03-25T20:33:56.243Z",
-      "id": 28
-    },
-    {
-      "filmId": 10,
-      "userId": 2,
-      "rating": 5,
-      "comment": "This was romantic",
-      "created_at": "2025-03-25T20:37:21.637Z",
-      "updated_at": "2025-03-25T20:37:21.637Z",
-      "id": 29
-    },
-    {
-      "filmId": 3,
-      "userId": 1,
-      "rating": 5,
-      "comment": "Amazing!",
-      "created_at": "2025-03-25T20:47:00.428Z",
-      "updated_at": "2025-03-25T20:47:00.428Z",
-      "id": 30
-    },
-    {
-      "filmId": 14,
-      "userId": 1,
-      "rating": 5,
-      "comment": "its ok",
-      "created_at": "2025-03-25T21:00:08.678Z",
-      "updated_at": "2025-03-25T21:00:08.678Z",
-      "id": 31
-    },
-    {
-      "filmId": 14,
-      "userId": 1,
-      "rating": 3,
-      "comment": "its not that bad",
-      "created_at": "2025-03-25T21:01:35.758Z",
-      "updated_at": "2025-03-25T21:01:35.758Z",
-      "id": 32
-    },
-    {
-      "filmId": 14,
-      "userId": 1,
-      "rating": 3,
-      "comment": "its not the bad",
-      "created_at": "2025-03-25T21:01:42.044Z",
-      "updated_at": "2025-03-25T21:01:42.044Z",
-      "id": 33
-    },
-    {
-      "filmId": 14,
-      "userId": 1,
-      "rating": 4,
-      "comment": "ffffff",
-      "created_at": "2025-03-25T21:01:55.473Z",
-      "updated_at": "2025-03-25T21:01:55.473Z",
-      "id": 34
-    },
-    {
-      "filmId": 14,
-      "userId": 1,
-      "rating": 1,
-      "comment": "ffffff",
-      "created_at": "2025-03-25T21:02:16.531Z",
-      "updated_at": "2025-03-25T21:02:16.531Z",
-      "id": 35
-    },
-    {
-      "filmId": 14,
-      "userId": 1,
-      "rating": 5,
-      "comment": "ddddddd",
-      "created_at": "2025-03-25T21:06:36.325Z",
-      "updated_at": "2025-03-25T21:06:36.325Z",
-      "id": 36
-    },
-    {
-      "filmId": 14,
-      "userId": 1,
-      "rating": 3,
-      "comment": "dddddd",
-      "created_at": "2025-03-25T21:06:43.033Z",
-      "updated_at": "2025-03-25T21:06:43.033Z",
-      "id": 37
-    },
-    {
-      "filmId": 14,
-      "userId": 1,
-      "rating": 5,
-      "comment": "testetet",
-      "created_at": "2025-03-25T21:07:23.226Z",
-      "updated_at": "2025-03-25T21:07:23.226Z",
-      "id": 38
-    },
-    {
-      "filmId": 7,
-      "userId": 1,
-      "rating": 5,
-      "comment": "its okay",
-      "created_at": "2025-03-25T21:08:01.803Z",
-      "updated_at": "2025-03-25T21:08:01.803Z",
-      "id": 39
-    }
-  ]
+    "films": [
+        {
+            "id": 1,
+            "title": "Inception",
+            "description": "Dom Cobb is a skilled thief who steals corporate secrets through the use of dream-sharing technology. Tasked with planting an idea instead of stealing one, he assembles a team to perform inception on a powerful businessman. As they descend into layers of dreams, the line between reality and illusion blurs.",
+            "releaseDate": "2010-07-16",
+            "year": 2010,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
+            "rating": 5,
+            "reviews": 9,
+            "genre": "SciFi",
+            "directorId": 1
+        },
+        {
+            "id": 2,
+            "title": "The Godfather",
+            "description": "The aging patriarch of the Corleone family hands over control of his empire to his reluctant son, Michael. As Michael becomes increasingly involved in the family business, he is drawn into a world of power, betrayal, and violence, transforming into a ruthless leader.",
+            "releaseDate": "1972-03-24",
+            "year": 1972,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
+            "rating": 5,
+            "reviews": 5,
+            "genre": "Drama",
+            "directorId": 2
+        },
+        {
+            "id": 3,
+            "title": "Spirited Away",
+            "description": "A ten-year-old girl named Chihiro stumbles into a mysterious world ruled by spirits and gods. When her parents are transformed into pigs, she must work in a bathhouse for spirits while seeking a way to free them and return to the human world.",
+            "releaseDate": "2001-07-20",
+            "year": 2001,
+            "posterUrl": "https://image.tmdb.org/t/p/w500/dL11DBPcRhWWnJcFXl9A07MrqTI.jpg",
+            "rating": 5,
+            "reviews": 13,
+            "genre": "Fantasy",
+            "directorId": 3
+        },
+        {
+            "id": 4,
+            "title": "Interstellar",
+            "description": "In a future where Earth is becoming uninhabitable, a team of astronauts travels through a wormhole in search of a new home for humanity. Facing time distortion, emotional loss, and unknown planets, they race against time to save civilization.",
+            "releaseDate": "2014-11-07",
+            "year": 2014,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
+            "rating": 5,
+            "reviews": 3,
+            "genre": "SciFi",
+            "directorId": 1
+        },
+        {
+            "id": 5,
+            "title": "The Matrix",
+            "description": "Thomas Anderson, a hacker known as Neo, discovers that reality is a simulation controlled by sentient machines. Guided by Morpheus and Trinity, he must embrace his role as 'The One' and fight to free humanity from the Matrix.",
+            "releaseDate": "1999-03-31",
+            "year": 1999,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
+            "rating": 4,
+            "reviews": 1,
+            "genre": "SciFi",
+            "directorId": 4
+        },
+        {
+            "id": 6,
+            "title": "Parasite",
+            "description": "The Kim family, struggling to survive, gradually infiltrates a wealthy household under false pretenses. As their deception deepens, unexpected events turn their plan upside down in this biting social commentary on class and greed.",
+            "releaseDate": "2019-05-30",
+            "year": 2019,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29.png",
+            "rating": 5,
+            "reviews": 3,
+            "genre": "Drama",
+            "directorId": 5
+        },
+        {
+            "id": 7,
+            "title": "The Dark Knight",
+            "description": "Batman faces his greatest challenge yet when the Joker unleashes chaos in Gotham. As the line between hero and vigilante blurs, Bruce Wayne must confront his deepest fears to protect the city he loves.",
+            "releaseDate": "2008-07-18",
+            "year": 2008,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg",
+            "rating": 5,
+            "reviews": 3,
+            "genre": "Action",
+            "directorId": 1
+        },
+        {
+            "id": 8,
+            "title": "La La Land",
+            "description": "Mia, an aspiring actress, and Sebastian, a jazz musician, fall in love while pursuing their dreams in Los Angeles. As their careers soar, they face difficult choices about ambition, love, and what truly matters.",
+            "releaseDate": "2016-12-09",
+            "year": 2016,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29.png",
+            "rating": 4,
+            "reviews": 3,
+            "genre": "Drama",
+            "directorId": 6
+        },
+        {
+            "id": 9,
+            "title": "Arrival",
+            "description": "When mysterious spacecraft touch down across the globe, expert linguist Louise Banks is recruited to decipher the aliens' language and intentions. As she learns to communicate, she uncovers revelations that challenge human perception of time and memory.",
+            "releaseDate": "2016-11-11",
+            "year": 2016,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/d/df/Arrival%2C_Movie_Poster.jpg",
+            "rating": 4,
+            "reviews": 0,
+            "genre": "SciFi",
+            "directorId": 9
+        },
+        {
+            "id": 10,
+            "title": "Your Name",
+            "description": "Two teenagers mysteriously start swapping bodies across time and distance. As they learn about each other’s lives and struggles, a deeper connection forms, and a shocking discovery binds their fates together.",
+            "releaseDate": "2016-08-26",
+            "year": 2016,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png",
+            "rating": 5,
+            "reviews": 3,
+            "genre": "Fantasy",
+            "directorId": 3
+        },
+        {
+            "id": 11,
+            "title": "The Prestige",
+            "description": "Two rival magicians in 19th-century London engage in a dangerous competition to create the ultimate illusion, pushing the boundaries of science, sacrifice, and obsession.",
+            "releaseDate": "2006-10-20",
+            "year": 2006,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/d/d2/Prestige_poster.jpg",
+            "rating": 5,
+            "reviews": 0,
+            "genre": "Drama",
+            "directorId": 1
+        },
+        {
+            "id": 12,
+            "title": "Inside Out",
+            "description": "Riley, an 11-year-old girl, deals with a difficult move to a new city. Inside her mind, five emotions — Joy, Sadness, Fear, Disgust, and Anger — struggle to guide her through the transition, revealing how emotions shape who we are.",
+            "releaseDate": "2015-06-19",
+            "year": 2015,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/0/0a/Inside_Out_%282015_film%29_poster.jpg",
+            "rating": 4,
+            "reviews": 1,
+            "genre": "Comedy",
+            "directorId": 7
+        },
+        {
+            "id": 13,
+            "title": "Tenet",
+            "description": "A secret agent embarks on a time-bending mission to prevent the onset of World War III. As he navigates a world of inversion and reversed entropy, he uncovers truths that redefine the nature of time and reality.",
+            "releaseDate": "2020-08-26",
+            "year": 2020,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/1/14/Tenet_movie_poster.jpg",
+            "rating": 4,
+            "reviews": 0,
+            "genre": "Action",
+            "directorId": 1
+        },
+        {
+            "id": 14,
+            "title": "Whiplash",
+            "description": "A talented drummer enrolls at a prestigious music conservatory and finds himself under the mentorship of an abusive instructor whose methods push him to the edge of his ability and sanity.",
+            "releaseDate": "2014-10-10",
+            "year": 2014,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/0/01/Whiplash_poster.jpg",
+            "rating": 5,
+            "reviews": 9,
+            "genre": "Drama",
+            "directorId": 6
+        },
+        {
+            "id": 15,
+            "title": "Edge of Tomorrow",
+            "description": "Major William Cage is caught in a time loop, reliving a deadly battle against alien invaders. With the help of warrior Rita Vrataski, he must improve his skills and change the outcome of the war.",
+            "releaseDate": "2014-06-06",
+            "year": 2014,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/f/f9/Edge_of_Tomorrow_Poster.jpg",
+            "rating": 4,
+            "reviews": 1,
+            "genre": "SciFi",
+            "directorId": 8
+        },
+        {
+            "id": 16,
+            "title": "Amélie",
+            "description": "Amélie is a shy waitress in Paris who sets out to improve the lives of those around her through small, whimsical acts of kindness. Along the way, she discovers the courage to pursue her own happiness.",
+            "releaseDate": "2001-04-25",
+            "year": 2001,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/5/53/Amelie_poster.jpg",
+            "rating": 4,
+            "reviews": 0,
+            "genre": "Comedy",
+            "directorId": 10
+        },
+        {
+            "id": 17,
+            "title": "The Grand Budapest Hotel",
+            "description": "The story of a legendary concierge and his loyal protégé unfolds across decades in a whimsical Eastern European hotel. A stolen painting, a murder mystery, and quirky characters blend in this stylish adventure.",
+            "releaseDate": "2014-03-28",
+            "year": 2014,
+            "posterUrl": "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Grand_Budapest_Hotel.png",
+            "rating": 4,
+            "reviews": 0,
+            "genre": "Comedy",
+            "directorId": 11
+        },
+        {
+            "id": 18,
+            "title": "Ex Machina",
+            "description": "A young programmer is selected to participate in a groundbreaking experiment in synthetic intelligence by evaluating the human qualities of a highly advanced humanoid A.I.",
+            "releaseDate": "2015-04-24",
+            "year": 2015,
+            "posterUrl": "https://m.media-amazon.com/images/I/71UxhMFjSlL._AC_SL1134_.jpg",
+            "rating": 4,
+            "reviews": 0,
+            "genre": "SciFi",
+            "directorId": 12
+        }
+    ],
+    "directors": [
+        {
+            "id": 1,
+            "name": "Christopher Nolan",
+            "nationality": "British-American"
+        },
+        {
+            "id": 2,
+            "name": "Francis Ford Coppola",
+            "nationality": "American"
+        },
+        {
+            "id": 3,
+            "name": "Hayao Miyazaki",
+            "nationality": "Japanese"
+        },
+        {
+            "id": 4,
+            "name": "Lana Wachowski",
+            "nationality": "American"
+        },
+        {
+            "id": 5,
+            "name": "Bong Joon-ho",
+            "nationality": "South Korean"
+        },
+        {
+            "id": 6,
+            "name": "Damien Chazelle",
+            "nationality": "American"
+        },
+        {
+            "id": 7,
+            "name": "Pete Docter",
+            "nationality": "American"
+        },
+        {
+            "id": 8,
+            "name": "Doug Liman",
+            "nationality": "American"
+        },
+        {
+            "id": 9,
+            "name": "Denis Villeneuve",
+            "nationality": "Canadian"
+        },
+        {
+            "id": 10,
+            "name": "Jean-Pierre Jeunet",
+            "nationality": "French"
+        },
+        {
+            "id": 11,
+            "name": "Wes Anderson",
+            "nationality": "American"
+        },
+        {
+            "id": 12,
+            "name": "Alex Garland",
+            "nationality": "British"
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "username": "SatikoShapy",
+            "name": "Sati",
+            "email": "sati@gmail.com",
+            "password": "1234"
+        },
+        {
+            "id": 2,
+            "username": "MarianaD",
+            "name": "Mariana",
+            "email": "mariana@gmail.com",
+            "password": "1234"
+        },
+        {
+            "id": 3,
+            "username": "AlessioV",
+            "name": "Alessio",
+            "email": "alessio@gmail.com",
+            "password": "1234"
+        }
+    ],
+    "reviews": [
+        {
+            "id": 1,
+            "filmId": 1,
+            "userId": 1,
+            "rating": 5,
+            "comment": "Mind-blowing movie. The concept, visuals and sound were all amazing.",
+            "created_at": "2024-03-20T14:25:00Z"
+        },
+        {
+            "id": 2,
+            "filmId": 1,
+            "userId": 2,
+            "rating": 4,
+            "comment": "Very clever and intense. Slightly confusing at times.",
+            "created_at": "2024-03-21T09:12:00Z"
+        },
+        {
+            "id": 3,
+            "filmId": 2,
+            "userId": 3,
+            "rating": 5,
+            "comment": "A masterpiece. Marlon Brando was incredible.",
+            "created_at": "2024-03-18T19:45:00Z"
+        },
+        {
+            "id": 4,
+            "filmId": 3,
+            "userId": 2,
+            "rating": 5,
+            "comment": "Visually stunning and emotionally powerful!",
+            "created_at": "2024-03-22T17:10:00Z"
+        },
+        {
+            "id": 5,
+            "filmId": 4,
+            "userId": 3,
+            "rating": 4,
+            "comment": "Interstellar makes your brain melt... in a good way.",
+            "created_at": "2024-03-23T12:40:00Z"
+        },
+        {
+            "id": 6,
+            "filmId": 5,
+            "userId": 1,
+            "rating": 3,
+            "comment": "Cool concept but a bit dated visually.",
+            "created_at": "2024-03-24T14:55:00Z"
+        },
+        {
+            "id": 7,
+            "filmId": 6,
+            "userId": 2,
+            "rating": 5,
+            "comment": "Incredible social commentary. A masterpiece.",
+            "created_at": "2024-03-24T18:00:00Z"
+        },
+        {
+            "id": 8,
+            "filmId": 7,
+            "userId": 3,
+            "rating": 5,
+            "comment": "The Joker was next level. Best Batman ever!",
+            "created_at": "2024-03-25T09:20:00Z"
+        },
+        {
+            "id": 9,
+            "filmId": 8,
+            "userId": 1,
+            "rating": 4,
+            "comment": "Great music and chemistry. A bit too dramatic.",
+            "created_at": "2024-03-25T11:30:00Z"
+        },
+        {
+            "id": 10,
+            "filmId": 3,
+            "userId": 3,
+            "rating": 5,
+            "comment": "Studio Ghibli magic at its finest.",
+            "created_at": "2024-03-26T08:15:00Z"
+        },
+        {
+            "id": 11,
+            "filmId": 2,
+            "userId": 2,
+            "rating": 5,
+            "comment": "The Godfather defines classic cinema. Brilliant.",
+            "created_at": "2024-03-26T12:00:00Z"
+        },
+        {
+            "id": 12,
+            "filmId": 1,
+            "userId": 3,
+            "rating": 4,
+            "comment": "Still thinking about that ending. Mind-bending!",
+            "created_at": "2024-03-26T15:45:00Z"
+        },
+        {
+            "filmId": 3,
+            "userId": 1,
+            "rating": 5,
+            "comment": "For Reeeeeaaaaaaaaaal!",
+            "created_at": "2025-03-25T18:41:14.835Z",
+            "updated_at": "2025-03-25T18:41:14.835Z",
+            "id": 13
+        },
+        {
+            "filmId": 2,
+            "userId": 1,
+            "rating": 5,
+            "comment": "Classic and never gets old!",
+            "created_at": "2025-03-25T18:41:47.780Z",
+            "updated_at": "2025-03-25T18:41:47.780Z",
+            "id": 14
+        },
+        {
+            "filmId": 2,
+            "userId": 1,
+            "rating": 1,
+            "comment": "gtyui",
+            "created_at": "2025-03-25T18:43:13.068Z",
+            "updated_at": "2025-03-25T18:43:13.068Z",
+            "id": 15
+        },
+        {
+            "filmId": 12,
+            "userId": 3,
+            "rating": 5,
+            "comment": "Kids friendly",
+            "created_at": "2025-03-25T18:44:39.878Z",
+            "updated_at": "2025-03-25T18:44:39.878Z",
+            "id": 16
+        },
+        {
+            "filmId": 3,
+            "userId": 1,
+            "rating": 5,
+            "comment": "qqqqqqqqqqqqq",
+            "created_at": "2025-03-25T19:00:42.768Z",
+            "updated_at": "2025-03-25T19:00:42.768Z",
+            "id": 17
+        },
+        {
+            "filmId": 10,
+            "userId": 1,
+            "rating": 5,
+            "comment": "tttttttttt",
+            "created_at": "2025-03-25T19:01:20.730Z",
+            "updated_at": "2025-03-25T19:01:20.730Z",
+            "id": 18
+        },
+        {
+            "filmId": 8,
+            "userId": 1,
+            "rating": 5,
+            "comment": "lalalalal",
+            "created_at": "2025-03-25T19:39:59.313Z",
+            "updated_at": "2025-03-25T19:39:59.313Z",
+            "id": 19
+        },
+        {
+            "filmId": 8,
+            "userId": 1,
+            "rating": 5,
+            "comment": "Musical and lovely!",
+            "created_at": "2025-03-25T20:11:59.098Z",
+            "updated_at": "2025-03-25T20:11:59.098Z",
+            "id": 20
+        },
+        {
+            "filmId": 1,
+            "userId": 1,
+            "rating": 5,
+            "comment": "Really good!",
+            "created_at": "2025-03-25T20:12:42.355Z",
+            "updated_at": "2025-03-25T20:12:42.355Z",
+            "id": 21
+        },
+        {
+            "filmId": 4,
+            "userId": 1,
+            "rating": 5,
+            "comment": "Scary!",
+            "created_at": "2025-03-25T20:14:25.634Z",
+            "updated_at": "2025-03-25T20:14:25.634Z",
+            "id": 22
+        },
+        {
+            "filmId": 6,
+            "userId": 1,
+            "rating": 5,
+            "comment": "Korea's best",
+            "created_at": "2025-03-25T20:16:02.818Z",
+            "updated_at": "2025-03-25T20:16:02.818Z",
+            "id": 23
+        },
+        {
+            "filmId": 15,
+            "userId": 1,
+            "rating": 3,
+            "comment": "Action packed",
+            "created_at": "2025-03-25T20:18:20.770Z",
+            "updated_at": "2025-03-25T20:18:20.770Z",
+            "id": 24
+        },
+        {
+            "filmId": 3,
+            "userId": 1,
+            "rating": 5,
+            "comment": "Masterpiece",
+            "created_at": "2025-03-25T20:18:45.194Z",
+            "updated_at": "2025-03-25T20:18:45.194Z",
+            "id": 25
+        },
+        {
+            "filmId": 3,
+            "userId": 1,
+            "rating": 5,
+            "comment": "Really nice",
+            "created_at": "2025-03-25T20:19:04.354Z",
+            "updated_at": "2025-03-25T20:19:04.354Z",
+            "id": 26
+        },
+        {
+            "filmId": 7,
+            "userId": 1,
+            "rating": 5,
+            "comment": "\nBatman is sexy",
+            "created_at": "2025-03-25T20:31:08.987Z",
+            "updated_at": "2025-03-25T20:31:08.987Z",
+            "id": 27
+        },
+        {
+            "filmId": 10,
+            "userId": 15,
+            "rating": 5,
+            "comment": "fffffffff",
+            "created_at": "2025-03-25T20:33:56.243Z",
+            "updated_at": "2025-03-25T20:33:56.243Z",
+            "id": 28
+        },
+        {
+            "filmId": 10,
+            "userId": 2,
+            "rating": 5,
+            "comment": "This was romantic",
+            "created_at": "2025-03-25T20:37:21.637Z",
+            "updated_at": "2025-03-25T20:37:21.637Z",
+            "id": 29
+        },
+        {
+            "filmId": 3,
+            "userId": 1,
+            "rating": 5,
+            "comment": "Amazing!",
+            "created_at": "2025-03-25T20:47:00.428Z",
+            "updated_at": "2025-03-25T20:47:00.428Z",
+            "id": 30
+        },
+        {
+            "filmId": 14,
+            "userId": 1,
+            "rating": 5,
+            "comment": "its ok",
+            "created_at": "2025-03-25T21:00:08.678Z",
+            "updated_at": "2025-03-25T21:00:08.678Z",
+            "id": 31
+        },
+        {
+            "filmId": 14,
+            "userId": 1,
+            "rating": 3,
+            "comment": "its not that bad",
+            "created_at": "2025-03-25T21:01:35.758Z",
+            "updated_at": "2025-03-25T21:01:35.758Z",
+            "id": 32
+        },
+        {
+            "filmId": 14,
+            "userId": 1,
+            "rating": 3,
+            "comment": "its not the bad",
+            "created_at": "2025-03-25T21:01:42.044Z",
+            "updated_at": "2025-03-25T21:01:42.044Z",
+            "id": 33
+        },
+        {
+            "filmId": 14,
+            "userId": 1,
+            "rating": 4,
+            "comment": "ffffff",
+            "created_at": "2025-03-25T21:01:55.473Z",
+            "updated_at": "2025-03-25T21:01:55.473Z",
+            "id": 34
+        },
+        {
+            "filmId": 14,
+            "userId": 1,
+            "rating": 1,
+            "comment": "ffffff",
+            "created_at": "2025-03-25T21:02:16.531Z",
+            "updated_at": "2025-03-25T21:02:16.531Z",
+            "id": 35
+        },
+        {
+            "filmId": 14,
+            "userId": 1,
+            "rating": 5,
+            "comment": "ddddddd",
+            "created_at": "2025-03-25T21:06:36.325Z",
+            "updated_at": "2025-03-25T21:06:36.325Z",
+            "id": 36
+        },
+        {
+            "filmId": 14,
+            "userId": 1,
+            "rating": 3,
+            "comment": "dddddd",
+            "created_at": "2025-03-25T21:06:43.033Z",
+            "updated_at": "2025-03-25T21:06:43.033Z",
+            "id": 37
+        },
+        {
+            "filmId": 14,
+            "userId": 1,
+            "rating": 5,
+            "comment": "testetet",
+            "created_at": "2025-03-25T21:07:23.226Z",
+            "updated_at": "2025-03-25T21:07:23.226Z",
+            "id": 38
+        },
+        {
+            "filmId": 7,
+            "userId": 1,
+            "rating": 5,
+            "comment": "its okay",
+            "created_at": "2025-03-25T21:08:01.803Z",
+            "updated_at": "2025-03-25T21:08:01.803Z",
+            "id": 39
+        },
+        {
+            "filmId": 1,
+            "userId": 1,
+            "rating": 4,
+            "comment": "what a crazy movie",
+            "created_at": "2025-03-26T07:33:42.746Z",
+            "updated_at": "2025-03-26T07:33:42.746Z",
+            "id": 40
+        },
+        {
+            "filmId": 1,
+            "userId": 1,
+            "rating": 4,
+            "comment": "ddddddddddddddddd",
+            "created_at": "2025-03-26T07:34:40.741Z",
+            "updated_at": "2025-03-26T07:34:40.741Z",
+            "id": 41
+        },
+        {
+            "filmId": 1,
+            "userId": 1,
+            "rating": 5,
+            "comment": "fffffffff",
+            "created_at": "2025-03-26T07:35:41.420Z",
+            "updated_at": "2025-03-26T07:35:41.420Z",
+            "id": 42
+        },
+        {
+            "filmId": 14,
+            "userId": 1,
+            "rating": 5,
+            "comment": "fffffffffffffffff",
+            "created_at": "2025-03-26T07:36:03.443Z",
+            "updated_at": "2025-03-26T07:36:03.443Z",
+            "id": 43
+        },
+        {
+            "filmId": 4,
+            "userId": 1,
+            "rating": 5,
+            "comment": "zzzzzzzzzzz",
+            "created_at": "2025-03-26T07:42:16.481Z",
+            "updated_at": "2025-03-26T07:42:16.481Z",
+            "id": 44
+        },
+        {
+            "filmId": 3,
+            "userId": 1,
+            "rating": 5,
+            "comment": "sooooo good",
+            "created_at": "2025-03-26T07:45:37.288Z",
+            "updated_at": "2025-03-26T07:45:37.288Z",
+            "id": 45
+        },
+        {
+            "filmId": 3,
+            "userId": 1,
+            "rating": 5,
+            "comment": "vvvvvvvvvvvvvvvvvv",
+            "created_at": "2025-03-26T07:46:16.897Z",
+            "updated_at": "2025-03-26T07:46:16.897Z",
+            "id": 46
+        },
+        {
+            "filmId": 3,
+            "userId": 1,
+            "rating": 5,
+            "comment": "ccccccccccc",
+            "created_at": "2025-03-26T07:46:42.688Z",
+            "updated_at": "2025-03-26T07:46:42.688Z",
+            "id": 47
+        },
+        {
+            "filmId": 6,
+            "userId": 1,
+            "rating": 5,
+            "comment": "ccccccccccc",
+            "created_at": "2025-03-26T07:46:53.131Z",
+            "updated_at": "2025-03-26T07:46:53.131Z",
+            "id": 48
+        },
+        {
+            "filmId": 3,
+            "userId": 1,
+            "rating": 5,
+            "comment": "sssssssssssss",
+            "created_at": "2025-03-26T08:22:31.637Z",
+            "updated_at": "2025-03-26T08:22:31.637Z",
+            "id": 49
+        },
+        {
+            "filmId": 3,
+            "userId": 1,
+            "rating": 5,
+            "comment": "ccccc",
+            "created_at": "2025-03-26T08:34:03.258Z",
+            "updated_at": "2025-03-26T08:34:03.258Z",
+            "id": 50
+        },
+        {
+            "filmId": 3,
+            "userId": 1,
+            "rating": 5,
+            "comment": "lalalalalal",
+            "created_at": "2025-03-26T10:21:08.626Z",
+            "updated_at": "2025-03-26T10:21:08.626Z",
+            "id": 51
+        }
+    ]
 }
