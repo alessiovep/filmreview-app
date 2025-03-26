@@ -521,6 +521,96 @@
       "created_at": "2025-03-25T20:37:21.637Z",
       "updated_at": "2025-03-25T20:37:21.637Z",
       "id": 29
+    },
+    {
+      "filmId": 3,
+      "userId": 1,
+      "rating": 5,
+      "comment": "Amazing!",
+      "created_at": "2025-03-25T20:47:00.428Z",
+      "updated_at": "2025-03-25T20:47:00.428Z",
+      "id": 30
+    },
+    {
+      "filmId": 14,
+      "userId": 1,
+      "rating": 5,
+      "comment": "its ok",
+      "created_at": "2025-03-25T21:00:08.678Z",
+      "updated_at": "2025-03-25T21:00:08.678Z",
+      "id": 31
+    },
+    {
+      "filmId": 14,
+      "userId": 1,
+      "rating": 3,
+      "comment": "its not that bad",
+      "created_at": "2025-03-25T21:01:35.758Z",
+      "updated_at": "2025-03-25T21:01:35.758Z",
+      "id": 32
+    },
+    {
+      "filmId": 14,
+      "userId": 1,
+      "rating": 3,
+      "comment": "its not the bad",
+      "created_at": "2025-03-25T21:01:42.044Z",
+      "updated_at": "2025-03-25T21:01:42.044Z",
+      "id": 33
+    },
+    {
+      "filmId": 14,
+      "userId": 1,
+      "rating": 4,
+      "comment": "ffffff",
+      "created_at": "2025-03-25T21:01:55.473Z",
+      "updated_at": "2025-03-25T21:01:55.473Z",
+      "id": 34
+    },
+    {
+      "filmId": 14,
+      "userId": 1,
+      "rating": 1,
+      "comment": "ffffff",
+      "created_at": "2025-03-25T21:02:16.531Z",
+      "updated_at": "2025-03-25T21:02:16.531Z",
+      "id": 35
+    },
+    {
+      "filmId": 14,
+      "userId": 1,
+      "rating": 5,
+      "comment": "ddddddd",
+      "created_at": "2025-03-25T21:06:36.325Z",
+      "updated_at": "2025-03-25T21:06:36.325Z",
+      "id": 36
+    },
+    {
+      "filmId": 14,
+      "userId": 1,
+      "rating": 3,
+      "comment": "dddddd",
+      "created_at": "2025-03-25T21:06:43.033Z",
+      "updated_at": "2025-03-25T21:06:43.033Z",
+      "id": 37
+    },
+    {
+      "filmId": 14,
+      "userId": 1,
+      "rating": 5,
+      "comment": "testetet",
+      "created_at": "2025-03-25T21:07:23.226Z",
+      "updated_at": "2025-03-25T21:07:23.226Z",
+      "id": 38
+    },
+    {
+      "filmId": 7,
+      "userId": 1,
+      "rating": 5,
+      "comment": "its okay",
+      "created_at": "2025-03-25T21:08:01.803Z",
+      "updated_at": "2025-03-25T21:08:01.803Z",
+      "id": 39
     }
   ]
 }
