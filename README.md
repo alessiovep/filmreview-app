@@ -22,7 +22,7 @@ npm install
 npm run dev
 ```
 
-### Start API  (json-server)
+### Start API (json-server)
 
 ```sh
 npm run serve:api
@@ -34,6 +34,7 @@ npm run serve:api
 ```sh
 npm run build
 ```
+
 ### Run tests
 
 ```sh
