@@ -7,7 +7,14 @@
         <v-card-subtitle class="review-author text-captionn"> Door: {{ review.user?.username }} </v-card-subtitle>
 
         <v-card-text class="review-excerpt text-body-2">
-            <strong>Rating:</strong> {{ getStars(review.film.rating) }}
+            <v-rating
+                :model-value="review?.rating"
+                readonly
+                half-increments
+                color="amber"
+                background-color="grey-lighten-2"
+                density="compact"
+            ></v-rating>
             <br />
             <br />
             {{ review.comment }}
@@ -20,15 +27,12 @@ import type { Review } from "../models/review";
 defineProps<{
     review: Review;
 }>();
-function getStars(rating: number): string {
-    return "★".repeat(rating) + "☆".repeat(5 - rating);
-}
 </script>
 
 <style lang="css">
 .force-visible-rating .v-btn {
     background-color: transparent !important;
-    color: #ffd700 !important; /* amarelo ouro */
+    color: #ffd700 !important;
     opacity: 1 !important;
 }
 
@@ -43,6 +47,6 @@ function getStars(rating: number): string {
 }
 
 .review-excerpt {
-    min-height: 60px; /* ajuste conforme necessário */
+    min-height: 150px;
 }
 </style>

@@ -36,6 +36,9 @@ const route = useRoute();
 const filmId = Number(route.params.id);
 const reviewStore = useReviewStore();
 const userStore = useUserStore();
+const emit = defineEmits(["review-added"]);
+
+emit("review-added");
 
 const submitReview = async () => {
     error.value = "";
@@ -70,6 +73,7 @@ const submitReview = async () => {
 
         await reviewStore.addReview(review);
         await reviewStore.fetchReviews(review.filmId);
+        emit("review-added");
         showForm.value = false;
         comment.value = "";
     } catch (e) {

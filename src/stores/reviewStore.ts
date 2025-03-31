@@ -16,6 +16,11 @@ export const useReviewStore = defineStore("reviewStore", {
         },
         async addReview(review: any) {
             await axios.post("http://localhost:3001/reviews", review);
+
+            const film = await axios.get(`http://localhost:3001/films/${review.filmId}`);
+            const amountReviews = film.data.reviews + 1;
+
+            await axios.patch(`http://localhost:3001/films/${review.filmId}`, { reviews: amountReviews });
             await this.fetchReviews(review?.filmId);
         },
     },

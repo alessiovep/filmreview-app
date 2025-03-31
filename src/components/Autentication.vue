@@ -44,15 +44,15 @@ onMounted(async () => {
     await userStore.fetchUsers();
 });
 
-const handleLogin = () => {
+const handleLogin = async () => {
     if (!valid.value) return;
 
     const tryUser = userStore.users.find((user) => user.email === email.value) || null;
 
     if (tryUser !== null && password.value === tryUser?.password) {
         error.value = "";
-        userStore.logedInUser(tryUser);
-        router.push("/");
+        await userStore.logedInUser(tryUser);
+        await router.push("/");
     } else {
         error.value = "Invalid Email or password";
     }

@@ -23,7 +23,7 @@
                 <p class="mt-4">{{ film?.description }}</p>
             </v-col>
         </v-row>
-        <AddReview v-if="userStore.user !== null" />
+        <AddReview v-if="userStore.user !== null" @review-added="fetchFilm" />
         <h2 class="text-h5 font-weight-bold mt-8 mb-4">Reviews for this film ({{ film?.reviews }})</h2>
         <ReviewList v-if="film?.id" :filmId="film.id" />
     </v-container>
@@ -40,10 +40,15 @@ import { useUserStore } from "../stores/userStore";
 const route = useRoute();
 const userStore = useUserStore();
 const film = ref<Film | null>(null);
-onMounted(async () => {
+
+const fetchFilm = async () => {
     const filmId = route.params.id;
     const { data } = await axios.get(`http://localhost:3001/films/${filmId}?_expand=director`);
     film.value = data;
+};
+
+onMounted(async () => {
+    await fetchFilm();
     userStore.loadUserFromLocalStorage();
 });
 </script>
