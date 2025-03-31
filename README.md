@@ -38,5 +38,5 @@ npm run build
 ### Run tests
 
 ```sh
-npm run test
+npx cypress open
 ```
