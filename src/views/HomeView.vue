@@ -1,33 +1,4 @@
-<script setup lang="ts">
-import FilmCard from "../components/FilmCard.vue";
-import ReviewCard from "../components/ReviewCard.vue";
-import { computed, onMounted, ref } from "vue";
-import { useFilmStore } from "../stores/filmStore";
-import { useReviewStore } from "../stores/reviewStore";
-
-const filmStore = useFilmStore();
-const reviewStore = useReviewStore();
-
-const films = computed(() => {
-    return filmStore.films.slice(0, 6);
-});
-const reviews = computed(() => {
-    return reviewStore.reviews.slice(0, 6);
-});
-
-onMounted(async () => {
-    await filmStore.fetchFilms();
-    await reviewStore.fetchReviews();
-});
-</script>
-
 <template>
-    <div class="search-wrapper">
-        <input type="text" class="search-input" placeholder="Zoek films of reviews..." />
-        <button class="search-button">
-            <i class="search-icon">🔍</i>
-        </button>
-    </div>
     <section class="section">
         <div class="section-header">
             <h2 class="section-title">Populaire Films</h2>
@@ -60,6 +31,29 @@ onMounted(async () => {
         </div>
     </section>
 </template>
+
+<script setup lang="ts">
+import FilmCard from "../components/FilmCard.vue";
+import ReviewCard from "../components/ReviewCard.vue";
+import { computed, onMounted, ref } from "vue";
+import { useFilmStore } from "../stores/filmStore";
+import { useReviewStore } from "../stores/reviewStore";
+
+const filmStore = useFilmStore();
+const reviewStore = useReviewStore();
+
+const films = computed(() => {
+    return filmStore.films.slice(0, 6);
+});
+const reviews = computed(() => {
+    return reviewStore.reviews.slice(0, 6);
+});
+
+onMounted(async () => {
+    await filmStore.fetchFilms();
+    await reviewStore.fetchReviews();
+});
+</script>
 
 <style scoped>
 .read-the-docs {

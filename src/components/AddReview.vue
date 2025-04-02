@@ -27,7 +27,6 @@ import { useRoute } from "vue-router";
 import { useReviewStore } from "../stores/reviewStore.js";
 import { useUserStore } from "../stores/userStore.js";
 
-const userId = ref(1);
 const rating = ref(5);
 const comment = ref("");
 const error = ref("");
@@ -37,8 +36,6 @@ const filmId = Number(route.params.id);
 const reviewStore = useReviewStore();
 const userStore = useUserStore();
 const emit = defineEmits(["review-added"]);
-
-emit("review-added");
 
 const submitReview = async () => {
     error.value = "";
@@ -60,11 +57,11 @@ const submitReview = async () => {
             error.value = "User Id not found. Please enter a valid user.";
             return;
         }
-
+        console.log("Current user:", userStore.user);
         const now = new Date();
         const review = {
             filmId: filmId,
-            userId: userId.value,
+            userId: userStore.user.id,
             rating: rating.value,
             comment: comment.value,
             created_at: now,
@@ -73,9 +70,12 @@ const submitReview = async () => {
 
         await reviewStore.addReview(review);
         await reviewStore.fetchReviews(review.filmId);
-        emit("review-added");
+
         showForm.value = false;
         comment.value = "";
+        rating.value = 5;
+
+        emit("review-added");
     } catch (e) {
         error.value = "Error submitting review.";
     }

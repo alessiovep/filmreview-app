@@ -5,20 +5,28 @@ import FilmsView from "../views/FilmsView.vue";
 import ReviewsView from "../views/ReviewsView.vue";
 import AccountView from "../views/AccountView.vue";
 import FilmDetails from "../views/FilmDetails.vue";
-import Autentication from "../components/Autentication.vue";
+import Authentication from "../views/AuthenticationView.vue";
+import { useUserStore } from "../stores/userStore";
 
 const routes = [
     { path: "/", name: "Home", component: HomeView },
     { path: "/films", name: "Films", component: FilmsView },
     { path: "/reviews", name: "Reviews", component: ReviewsView },
-    { path: "/account", name: "Account", component: AccountView },
+    { path: "/account", name: "Account", component: AccountView, meta: { requiresAuth: true } },
     { path: "/films/:id", name: "FilmDetails", component: FilmDetails },
-    { path: "/login", name: "Autentication", component: Autentication },
+    { path: "/authentication", name: "Authentication", component: Authentication },
 ];
 
 const router = createRouter({
     history: createWebHistory(),
     routes,
 });
-
+router.beforeEach((to, from, next) => {
+    const userStore = useUserStore();
+    if (to.meta.requiresAuth && !userStore.user) {
+        next("/authentication");
+    } else {
+        next();
+    }
+});
 export default router;

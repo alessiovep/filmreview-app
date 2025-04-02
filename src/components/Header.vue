@@ -1,6 +1,8 @@
 <template>
     <v-app-bar color="primary" dark flat>
-        <v-toolbar-title class="font-weight-bold">FilmCritique</v-toolbar-title>
+        <v-toolbar-title class="font-weight-bold"
+            ><v-btn to="/" style="font-size: 20px">FilmCritique</v-btn></v-toolbar-title
+        >
 
         <v-spacer />
         <v-btn v-if="userStore.user !== null" variant="text" to="/account">Hi {{ userStore.user.name }}</v-btn>
@@ -10,7 +12,7 @@
         <v-btn variant="text" to="/reviews">Reviews</v-btn>
 
         <v-btn v-if="userStore.user !== null" variant="text" @click="logoutAndRedirect">Logout</v-btn>
-        <v-btn v-else variant="text" to="/login">Login</v-btn>
+        <v-btn v-else variant="text" to="/authentication">Login</v-btn>
     </v-app-bar>
 </template>
 <script setup lang="ts">

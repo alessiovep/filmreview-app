@@ -2,7 +2,7 @@
 let createdReviewId: number;
 describe("Add Review", () => {
     beforeEach(() => {
-        cy.login("cypress@gmail.com", "1234");
+        cy.login("mariana@gmail.com", "1234");
     });
 
     it("should allow a user to add a review", () => {
