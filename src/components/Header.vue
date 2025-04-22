@@ -11,7 +11,12 @@
         <v-btn variant="text" to="/films">Films</v-btn>
         <v-btn variant="text" to="/reviews">Reviews</v-btn>
 
-        <v-btn v-if="userStore.user !== null" variant="text" @click="logoutAndRedirect">Logout</v-btn>
+        <v-btn
+            v-if="userStore.user !== null"
+            variant="text"
+            @click="logoutAndRedirect"
+            data-cy="logout-btn"
+        >Logout</v-btn>
         <v-btn v-else variant="text" to="/authentication">Login</v-btn>
     </v-app-bar>
 </template>
