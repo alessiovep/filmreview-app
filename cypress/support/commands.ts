@@ -2,11 +2,13 @@
 export {};
 
 Cypress.Commands.add("login", (email: string, password: string) => {
-    cy.visit("/login");
-    cy.get('input[type="email"]').type(email);
-    cy.get('input[type="password"]').type(password);
-    cy.get("form").contains("Login").click();
-    cy.contains("Hi").should("exist");
+    cy.visit("/authentication");
+
+    cy.get('[data-cy="email"]').type(email);
+    cy.get('[data-cy="password"]').type(password);
+    cy.get('[data-cy="login-btn"]').click();
+
+    cy.url().should('eq', 'http://localhost:5173/');
 });
 
 declare global {

@@ -20,7 +20,7 @@
       "year": 1972,
       "posterUrl": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
       "rating": 5,
-      "reviews": 4,
+      "reviews": 5,
       "genre": "Drama",
       "directorId": 2
     },
@@ -32,7 +32,7 @@
       "year": 2001,
       "posterUrl": "https://image.tmdb.org/t/p/w500/dL11DBPcRhWWnJcFXl9A07MrqTI.jpg",
       "rating": 5,
-      "reviews": 11,
+      "reviews": 12,
       "genre": "Fantasy",
       "directorId": 3,
       "comment": "teste"
@@ -722,6 +722,15 @@
       "created_at": "2025-04-02T16:50:42.857Z",
       "updated_at": "2025-04-02T16:50:42.857Z",
       "id": 49
+    },
+    {
+      "filmId": 2,
+      "userId": 1,
+      "rating": 5,
+      "comment": "Classic and retro",
+      "created_at": "2025-04-22T15:48:23.095Z",
+      "updated_at": "2025-04-22T15:48:23.095Z",
+      "id": 50
     }
   ]
 }

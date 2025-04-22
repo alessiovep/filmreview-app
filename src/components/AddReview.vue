@@ -9,11 +9,29 @@
                 <v-form @submit.prevent="submitReview">
                     <!-- <v-text-field v-model.number="userId" label="User ID" type="number" required /> -->
 
-                    <v-text-field v-model.number="rating" label="Rating (1-5)" type="number" min="1" max="5" required />
+                    <v-text-field
+                        v-model.number="rating"
+                        label="Rating (1-5)"
+                        type="number"
+                        min="1"
+                        max="5"
+                        required
+                        data-cy="rating"
+                    />
 
-                    <v-textarea v-model="comment" label="Comment" required />
+                    <v-textarea
+                        v-model="comment"
+                        label="Comment"
+                        required
+                        data-cy="comment"
+                    />
 
-                    <v-btn type="submit" color="success" class="mt-2">Submit</v-btn>
+                    <v-btn
+                        type="submit"
+                        color="success"
+                        class="mt-2"
+                        data-cy="submit"
+                    >Submit</v-btn>
                     <p v-if="error" class="text-error mt-2">{{ error }}</p>
                 </v-form>
             </div>

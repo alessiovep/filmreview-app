@@ -9,6 +9,7 @@
                     class="mb-2"
                     label="Email"
                     clearable
+                    data-cy="email"
                 />
 
                 <v-text-field
@@ -18,6 +19,7 @@
                     label="Password"
                     placeholder="Enter your password"
                     clearable
+                    data-cy="password"
                 />
 
                 <v-alert type="error" class="mt-2" v-if="error">{{ error }}</v-alert>
@@ -32,6 +34,7 @@
                     type="submit"
                     variant="elevated"
                     block
+                    data-cy="login-btn"
                 >
                     Sign In
                 </v-btn>

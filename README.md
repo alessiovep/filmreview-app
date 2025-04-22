@@ -40,3 +40,6 @@ npm run build
 ```sh
 npx cypress open
 ```
+```sh
+npx cypress run
+```
