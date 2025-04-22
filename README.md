@@ -35,11 +35,16 @@ npm run serve:api
 npm run build
 ```
 
-### Run tests
+### Run Cypress tests
 
 ```sh
 npx cypress open
 ```
 ```sh
 npx cypress run
+```
+### Run Vitests
+
+```sh
+npx vitest
 ```

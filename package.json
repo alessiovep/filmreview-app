@@ -20,7 +20,7 @@
         "vuetify": "^3.7.18"
     },
     "devDependencies": {
-        "@pinia/testing": "^1.0.0",
+        "@pinia/testing": "^1.0.1",
         "@vitejs/plugin-vue": "^5.2.3",
         "@vue/test-utils": "^2.4.6",
         "@vue/tsconfig": "^0.7.0",
@@ -30,7 +30,7 @@
         "typescript": "~5.7.2",
         "vite": "^6.2.0",
         "vite-plugin-vuetify": "^2.1.0",
-        "vitest": "^3.0.9",
+        "vitest": "^3.1.2",
         "vue-test-utils": "^0.5.0",
         "vue-tsc": "^2.2.4"
     }
