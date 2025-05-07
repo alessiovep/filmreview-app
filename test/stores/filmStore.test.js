@@ -1,4 +1,4 @@
-import { useFilmStore } from "../src/stores/filmStore";
+import { useFilmStore } from "../../src/stores/filmStore";
 import { describe, test, expect } from "vitest";
 import { createPinia, setActivePinia } from "pinia";
 import axios from "axios";

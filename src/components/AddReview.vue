@@ -19,19 +19,9 @@
                         data-cy="rating"
                     />
 
-                    <v-textarea
-                        v-model="comment"
-                        label="Comment"
-                        required
-                        data-cy="comment"
-                    />
+                    <v-textarea v-model="comment" label="Comment" required data-cy="comment" />
 
-                    <v-btn
-                        type="submit"
-                        color="success"
-                        class="mt-2"
-                        data-cy="submit"
-                    >Submit</v-btn>
+                    <v-btn type="submit" color="success" class="mt-2" data-cy="submit">Submit</v-btn>
                     <p v-if="error" class="text-error mt-2">{{ error }}</p>
                 </v-form>
             </div>
@@ -69,7 +59,6 @@ const submitReview = async () => {
     }
 
     try {
-        // check user
         const userRes = await fetch(`http://localhost:3001/users/${userStore.user.id}`);
         if (!userRes.ok) {
             error.value = "User Id not found. Please enter a valid user.";
