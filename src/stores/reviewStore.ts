@@ -4,7 +4,7 @@ import type { Review } from "../models/review";
 
 export const useReviewStore = defineStore("reviewStore", {
     state: () => ({
-        reviews: [] as any[],
+        reviews: [] as Review[],
     }),
     actions: {
         async fetchReviews(filmId?: number) {
@@ -33,7 +33,7 @@ export const useReviewStore = defineStore("reviewStore", {
                 reviews: amountReviews,
             });
 
-            await this.fetchReviews(review.filmId);
+            await this.fetchReviews();
         },
         async deleteReview(review: any) {
             await axios.delete(`http://localhost:3001/reviews/${review.id}`);

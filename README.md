@@ -40,11 +40,20 @@ npm run build
 ```sh
 npx cypress open
 ```
+
 ```sh
 npx cypress run
 ```
+
 ### Run Vitests
 
 ```sh
 npx vitest
+```
+
+### Admin user
+
+```sh
+user: admin@gmail.com
+password: admin
 ```
